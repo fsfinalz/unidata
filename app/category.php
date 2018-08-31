@@ -15,6 +15,6 @@ class category extends Model
      * @return string
     */
     public function childs() {
-        return $this->hasMany('\App\Category','parent_id','id') ;
+        return $this->hasMany('App\Category','parent_id','id') ;
     }
 }
